@@ -1,0 +1,75 @@
+JokeLog:
+
+In 3 separate shell windows or terminals:
+
+> cd to the terminal where the java files are located
+
+Window 1:
+> javac JokeServer
+> java JokeServer
+
+Window 2:
+> javac JokeClient
+> java JokeClient
+
+Window 3:
+> javac JokeClientAdmin
+> java JokeClientAdmin
+------------------------------------------------------------
+
+1) Joke Client Screen: 
+LC02V775JHTD5:java u390445$ java JokeClient
+Wisa Terhune-Praphruettam's Joke Client. 
+
+Using default server: localhost, Port: 4545. Joke Client Administrator will run on port 5050 Using default server: localhost, Port: 4545. Joke Client Administrator will run on port 5050 
+Hello and welcome! Please enter your name: 
+Wisa.  <---this is what the user enters
+Hello Wisa!
+Hoping you are staying staying safe in the pandemic! 
+Your user ID is: 1823
+
+Press enter to begin! <------user has to press enter to get joke default unless the client admin changes to proverb
+
+Text from server: Joke A: Wisa = I would be rich if I was given a dollar for every screechy noise I made on the piccolo.
+Text from server: Joke D: Wisa = If my corgi can talk, she would say that I have OCD: Obsessive Corgi Disorder!
+Text from server: Joke C: Wisa = What does a Thai boyfriend/husband say to his significant other while giving an air cooler? I am your biggest FAN!
+Text from server: Joke B: Wisa = How many flute players does it take to fix a broken light bulb? None. They are all too busy fighting for the chair.
+Text from server: JOKE CYCLE COMPLETED!
+Press enter to begin!
+
+[user presses Enter to continue] <---during this time, I changed to proverb mode in the client admin
+
+Text from server: Proverb A: Wisa = A vacation always clear one's mind.
+Text from server: Proverb D: Wisa = Work hard. Play hard.
+Text from server: Proverb B: Wisa = Patience is a virtue.
+Text from server: Proverb C: Wisa = No good deeds go unpunished.
+Text from server: PROVERB CYCLE COMPLETED!
+Press enter to begin!  <---------never ending continue prompt until user presses control+C
+
+
+2) Joke Server Screen:
+
+This is Wisa Terhune-Praphruettam's Joke Server starting up...listening at port: 4545
+
+Now spinning the joke client administrator thread to connect to the Joke Client Admin...
+The Joke Administration Client will be using port 5050.
+
+UserName is Wisa. <-----reads from the Joke Client
+Searching Joke for Wisa...JOKE CYCLE COMPLETED! <---------realizes that the user presses "Enter" and client admin mode is on "Joke"
+
+Turning on Proverb Mode...      <-----------I turned on Proverb mode in client admin
+UserName is Wisa
+Searching Proverb for Wisa...PROVERB CYCLE COMPLETED! <--------server is shown the same ouput as JokeClient that it was successfully shown proverb
+
+
+3) Joke Client Admin Screen:
+
+LC02V775JHTD5:java u390445$ java JokeClientAdmin
+Wisa Terhune-Praphruettam's Joke Client Administrator....
+
+Using Server Name: localhost with port 4545 and Client Administration Port Number: 5050
+Hello and welcome to Joke Client Administrator.
+Please press enter to begin or press quit.
+
+[user presses Enter to turn on Proverb mode] <-----user presses enter to go into proverb mode
+
